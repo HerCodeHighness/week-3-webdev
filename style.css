@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+
+.game-container {
+    width: 90%;
+    max-width: 450px;
+
+    background-color: white;
+
+    padding: 40px;
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Heading */
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* Difficulty section */
+
+.difficulty-section {
+    margin-bottom: 20px;
+}
+
+.difficulty-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+
+    border: 2px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+/* Range text */
+
+#rangeText {
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Input section */
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 2px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+/* Buttons */
+
+button {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #667eea;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #5568d9;
+}
+
+
+/* Message */
+
+#message {
+    margin: 25px 0;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    min-height: 25px;
+}
+
+
+/* Attempts */
+
+.attempts {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#attempts {
+    font-weight: bold;
+    color: #667eea;
+}
+
+
+/* Restart button */
+
+#restartButton {
+    background-color: #28a745;
+    width: 100%;
+}
+
+#restartButton:hover {
+    background-color: #218838;
+}
+
+
+/* Mobile responsiveness */
+
+@media (max-width: 500px) {
+
+    .game-container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
